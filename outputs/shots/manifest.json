@@ -36,10 +36,23 @@
     "fallback": "push_in"
   },
   "s07": {
-    "key": "174c3e872ccc",
-    "path": "shots\\s07_kb__174c3e872ccc.mp4",
-    "source": "kenburns",
-    "fallback": "pan_right"
+    "key": "c7b2f246a03b",
+    "path": "shots\\s07__c7b2f246a03b.mp4",
+    "source": "wan",
+    "spec": {
+      "shot_id": "s07",
+      "model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+      "keyframe_hash": "153480a33471",
+      "prompt": "the camera pans slowly from left to right along the row of figures, soft candle light flickers",
+      "negative_prompt": "morphing face, extra limbs, flicker, text, watermark, fast motion",
+      "seed": 107,
+      "width": 640,
+      "height": 640,
+      "fps": 24,
+      "frames": 121,
+      "steps": 30,
+      "guidance": 5.0
+    }
   },
   "s08": {
     "key": "702ee37a7510",

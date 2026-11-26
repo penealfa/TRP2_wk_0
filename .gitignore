@@ -23,3 +23,5 @@ outputs/_music_dl.txt
 outputs/kaggle_out/*.log
 outputs/kaggle_out/
 outputs/_blender_*.txt
+outputs_blender/
+outputs/blender/*.mp4

@@ -1,0 +1,26 @@
+{
+  "s01": {
+    "key": "21af56eade0a",
+    "path": "blender\\s01__21af56eade0a.mp4",
+    "source": "blender",
+    "script": "s01__21af56eade0a.py",
+    "script_origin": "llm",
+    "seconds": 6.7
+  },
+  "s02": {
+    "key": "d535dbf1d313",
+    "path": "blender\\s02__d535dbf1d313.mp4",
+    "source": "blender",
+    "script": "s02__d535dbf1d313.py",
+    "script_origin": "template",
+    "seconds": 5.0
+  },
+  "s03": {
+    "key": "02a1b4ee06cb",
+    "path": "blender\\s03__02a1b4ee06cb.mp4",
+    "source": "blender",
+    "script": "s03__02a1b4ee06cb.py",
+    "script_origin": "llm",
+    "seconds": 9.24
+  }
+}

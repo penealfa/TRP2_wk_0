@@ -8,10 +8,11 @@ Measured from `runs.jsonl`: `make costs` prints the per-stage table below from t
 | script | none (script written by hand) | – | – | – | $0 | – |
 | narration | Gemini TTS `gemini-3.8-flash-tts` | 11 / 6 (all 6 were 429 quota) | 4.6 s | – | $0 | not measured (free tier) |
 | keyframes | Cloudflare FLUX.2 klein 4B | 42 / 3 | 8.4 s | – | $0 | not measured (free neurons) |
-| shots | Wan 2.2 TI2V-5B, Kaggle T4 | 1 / 1 (the 1 failure was the OOM that led to the fix, F6) | 2,499 s per clip | 41.6 (+3.8 model load) | $0 | about $0.25 at an assumed $0.35/GPU-hour for a T4 |
+| shots | Wan 2.2 TI2V-5B, Kaggle T4 | 2 / 1 (the 1 failure was the OOM that led to the fix, F6) | 2,499 s and 2,258 s per clip | 79.2 for 2 clips (+3.8 model load each) | $0 | about $0.46 at an assumed $0.35/GPU-hour for a T4 |
+| motion (optional Blender layer) | Cloudflare `qwen2.5-coder-32b-instruct` writes scripts; Blender renders locally | 23+ model calls, 11 renders | about 1 s per script; 70-210 s per render | – (local GPU) | $0 | not measured (free neurons) |
 | music | ACE-Step 1.5 turbo, Kaggle T4 | 3 / 6 (6 failed candidates across two earlier runs, F7) | 22.1 s per candidate | 1.1 | $0 | about $0.01 at the same assumed rate |
 | assemble | FFmpeg, local | 2 films | about 45-106 s for both | – | $0 | – |
-| **Total** | | | | **about 43** | **$0** | **about $0.26** (the T4 rate is my assumption, not a quoted price) |
+| **Total** | | | | **about 81** | **$0** | **about $0.50** (the T4 rate is my assumption, not a quoted price) |
 
 Failed calls are in `runs.jsonl` for the API stages; the failed Kaggle attempts are in the Kaggle kernel logs (not imported), and described in [FAILURES.md](FAILURES.md).
 
