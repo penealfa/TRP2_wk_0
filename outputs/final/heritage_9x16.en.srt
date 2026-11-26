@@ -1,0 +1,92 @@
+1
+00:00:00,300 --> 00:00:03,896
+Everyone is a programmer
+now. They type a wish, and
+
+2
+00:00:03,896 --> 00:00:05,870
+the machine writes the code.
+
+3
+00:00:07,270 --> 00:00:09,510
+And that worries you?
+
+4
+00:00:11,270 --> 00:00:16,730
+I spent years learning what
+happens underneath. Memory.
+
+5
+00:00:16,730 --> 00:00:19,410
+Pointers. Why things break.
+
+6
+00:00:20,310 --> 00:00:27,169
+Punch cards. Assembly. C.
+Every step was someone
+
+7
+00:00:27,169 --> 00:00:33,170
+trying to say what they
+meant more easily.
+
+8
+00:00:34,070 --> 00:00:37,745
+But if it's easy, who will
+know how it works when it
+
+9
+00:00:37,745 --> 00:00:38,240
+breaks?
+
+10
+00:00:39,140 --> 00:00:44,250
+Someone always does. The one
+who wants to.
+
+11
+00:00:45,150 --> 00:00:50,365
+Before you, the scribe
+ground his own ink for the
+
+12
+00:00:50,365 --> 00:00:55,686
+manuscript. The weaver
+counted every thread of the
+
+13
+00:00:55,686 --> 00:00:59,730
+shemma. They feared the new
+thing too.
+
+14
+00:01:00,630 --> 00:01:05,224
+And yet the craft is still
+here. You are just the
+
+15
+00:01:05,224 --> 00:01:08,130
+newest one in a very long
+line.
+
+16
+00:01:09,030 --> 00:01:14,037
+Do you remember the first
+time the screen said "Hello,
+
+17
+00:01:14,037 --> 00:01:15,150
+World" back?
+
+18
+00:01:16,350 --> 00:01:18,330
+I laughed out loud.
+
+19
+00:01:20,050 --> 00:01:24,492
+Maybe that's the point. More
+people will get to feel that
+
+20
+00:01:24,492 --> 00:01:24,960
+laugh.

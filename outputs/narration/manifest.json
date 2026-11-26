@@ -1,0 +1,101 @@
+{
+  "s02": {
+    "key": "938a4e09c090",
+    "path": "narration\\s02__938a4e09c090.wav",
+    "duration_s": 2.24,
+    "text": "ይሄ ያሳስብሃል?",
+    "speaker": "wolf",
+    "voice": "Kore",
+    "source": "tts"
+  },
+  "s01": {
+    "key": "962895a4a530",
+    "path": "narration\\s01__962895a4a530.wav",
+    "duration_s": 5.57,
+    "text": "አሁን ሁሉም ሰው ፕሮግራመር ነው። ምኞቱን ይጽፋል፣ ማሽኑ ኮዱን ይጽፍለታል።",
+    "speaker": "peneal",
+    "voice": "Charon",
+    "source": "tts"
+  },
+  "s03": {
+    "key": "f2082512de9b",
+    "path": "narration\\s03__f2082512de9b.wav",
+    "duration_s": 8.14,
+    "text": "ከውስጥ የሚሆነውን ለመማር ዓመታት አሳለፍኩ። ሜሞሪ፣ ፖይንተር፣ ነገሮች ለምን እንደሚበላሹ።",
+    "speaker": "peneal",
+    "voice": "Charon",
+    "source": "tts"
+  },
+  "s04": {
+    "key": "2949a36f9da0",
+    "path": "narration\\s04__2949a36f9da0.wav",
+    "duration_s": 12.86,
+    "text": "ፓንች ካርድ። አሰምብሊ። ሲ። እያንዳንዱ እርምጃ ሃሳብን በቀላሉ ለመግለጽ የተደረገ ጥረት ነበር።",
+    "speaker": "wolf",
+    "voice": "Kore",
+    "source": "tts"
+  },
+  "s05": {
+    "key": "d75da7aad725",
+    "path": "narration\\s05__d75da7aad725.wav",
+    "duration_s": 4.17,
+    "text": "ቀላል ከሆነ ግን፣ ሲበላሽ እንዴት እንደሚሰራ ማን ያውቃል?",
+    "speaker": "peneal",
+    "voice": "Charon",
+    "source": "tts"
+  },
+  "s06": {
+    "key": "5444b984c20a",
+    "path": "narration\\s06__5444b984c20a.wav",
+    "duration_s": 5.11,
+    "text": "ሁሌም የሚያውቅ አለ። ማወቅ የሚፈልግ።",
+    "speaker": "wolf",
+    "voice": "Kore",
+    "source": "tts"
+  },
+  "s07": {
+    "key": "423024e4d900",
+    "path": "narration\\s07__423024e4d900.wav",
+    "duration_s": 14.58,
+    "text": "ከአንተ በፊት፣ ጸሐፊው ለብራናው ቀለሙን ራሱ ይፈጭ ነበር። ሸማኔው የሸማውን ክር አንድ በአንድ ይቆጥር ነበር። እነሱም አዲሱን ነገር ፈርተው ነበር።",
+    "speaker": "wolf",
+    "voice": "Kore",
+    "source": "tts"
+  },
+  "s08": {
+    "key": "2701300100a0",
+    "path": "narration\\s08__2701300100a0.wav",
+    "duration_s": 7.5,
+    "text": "ጥበቡ ግን ዛሬም አለ። አንተ የረጅሙ መስመር አዲሱ ሰው ብቻ ነህ።",
+    "speaker": "wolf",
+    "voice": "Kore",
+    "source": "tts"
+  },
+  "s09": {
+    "key": "2f2422344634",
+    "path": "narration\\s09__2f2422344634.wav",
+    "duration_s": 6.12,
+    "text": "ስክሪኑ መጀመሪያ \"Hello, World\" ብሎ ሲመልስልህ ታስታውሳለህ?",
+    "speaker": "wolf",
+    "voice": "Kore",
+    "source": "tts"
+  },
+  "s10": {
+    "key": "cb7de2333b49",
+    "path": "narration\\s10__cb7de2333b49.wav",
+    "duration_s": 1.98,
+    "text": "ጮክ ብዬ ሳቅኩ።",
+    "speaker": "peneal",
+    "voice": "Charon",
+    "source": "tts"
+  },
+  "s11": {
+    "key": "c862e0022599",
+    "path": "narration\\s11__c862e0022599.wav",
+    "duration_s": 4.91,
+    "text": "ምናልባት ይሄ ነው። ብዙ ሰዎች ያንን ሳቅ ያገኛሉ።",
+    "speaker": "peneal",
+    "voice": "Charon",
+    "source": "tts"
+  }
+}

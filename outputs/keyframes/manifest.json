@@ -1,0 +1,91 @@
+{
+  "ref_peneal": {
+    "key": "6af1811b4b3d",
+    "path": "keyframes\\ref_peneal__6af1811b4b3d.png",
+    "seed": 2611,
+    "user_ref": "peneal.jpg"
+  },
+  "ref_wolf": {
+    "key": "7a85745b28f8",
+    "path": "keyframes\\ref_wolf__7a85745b28f8.png",
+    "seed": 2612,
+    "user_ref": null
+  },
+  "s01": {
+    "key": "adf0ba54ce1c",
+    "path": "keyframes\\s01__adf0ba54ce1c.png",
+    "seed": 101,
+    "prompt": "Peneal sits at a small wooden desk at night in a modest Addis Ababa room, a laptop glowing blue in front of him, a cup of buna beside it, a window behind him with distant city lights. Peneal: Peneal, a 26-year-old Ethiopian backend engineer, slim build, short curly black hair, short full black beard and moustache, thin gold-rimmed aviator glasses, warm brown skin, wearing a plain dark hoodie, calm thoughtful face. traditional Ethiopian Orthodox church painting style, flat areas of bold colour, thick dark outlines, large almond-shaped expressive eyes, frontal or three-quarter poses, palette of ochre yellow, deep red, indigo blue and leaf green with gold accents, painted on aged plaster with fine cracks, flat patterned background, minimal perspective, warm candle-like light, subject centred in frame. avoid: text, letters, words, numbers, watermark, logo, photorealistic, 3d render, extra fingers, distorted face, modern cartoon style, halo, aura ring, wings",
+    "approved": true
+  },
+  "s02": {
+    "key": "0fc14a7fc4a0",
+    "path": "keyframes\\s02__0fc14a7fc4a0.png",
+    "seed": 102,
+    "prompt": "the wolf sits calmly on the floor of the dark room beside a bookshelf, glowing softly, its faint glow lighting the wall behind it. The Wolf: an Ethiopian wolf (Simien fox), slender long-legged canid with a long narrow muzzle, rich tawny-red coat, white throat and chest, pointed ears, wise calm amber eyes, a faint soft inner glow along its outline as if it were half a dream. traditional Ethiopian Orthodox church painting style, flat areas of bold colour, thick dark outlines, large almond-shaped expressive eyes, frontal or three-quarter poses, palette of ochre yellow, deep red, indigo blue and leaf green with gold accents, painted on aged plaster with fine cracks, flat patterned background, minimal perspective, warm candle-like light, subject centred in frame. avoid: text, letters, words, numbers, watermark, logo, photorealistic, 3d render, extra fingers, distorted face, modern cartoon style, halo, aura ring, wings",
+    "approved": true
+  },
+  "s03": {
+    "key": "f7af1da50203",
+    "path": "keyframes\\s03__f7af1da50203.png",
+    "seed": 103,
+    "prompt": "close-up of Peneal's face lit by the laptop, eyes tired but serious, looking slightly to the side toward a soft golden glow. Peneal: Peneal, a 26-year-old Ethiopian backend engineer, slim build, short curly black hair, short full black beard and moustache, thin gold-rimmed aviator glasses, warm brown skin, wearing a plain dark hoodie, calm thoughtful face. traditional Ethiopian Orthodox church painting style, flat areas of bold colour, thick dark outlines, large almond-shaped expressive eyes, frontal or three-quarter poses, palette of ochre yellow, deep red, indigo blue and leaf green with gold accents, painted on aged plaster with fine cracks, flat patterned background, minimal perspective, warm candle-like light, subject centred in frame. avoid: text, letters, words, numbers, watermark, logo, photorealistic, 3d render, extra fingers, distorted face, modern cartoon style, halo, aura ring, wings",
+    "approved": true
+  },
+  "s04": {
+    "key": "78f895b34e23",
+    "path": "keyframes\\s04__78f895b34e23.png",
+    "seed": 104,
+    "prompt": "the wolf stands in the dark room while three illuminated painted panels float in the air around it, the first showing a card full of punched holes, the second a wall of old machines with switches, the third a small glowing screen, gold borders around each panel. The Wolf: an Ethiopian wolf (Simien fox), slender long-legged canid with a long narrow muzzle, rich tawny-red coat, white throat and chest, pointed ears, wise calm amber eyes, a faint soft inner glow along its outline as if it were half a dream. traditional Ethiopian Orthodox church painting style, flat areas of bold colour, thick dark outlines, large almond-shaped expressive eyes, frontal or three-quarter poses, palette of ochre yellow, deep red, indigo blue and leaf green with gold accents, painted on aged plaster with fine cracks, flat patterned background, minimal perspective, warm candle-like light, subject centred in frame. avoid: text, letters, words, numbers, watermark, logo, photorealistic, 3d render, extra fingers, distorted face, modern cartoon style, halo, aura ring, wings",
+    "approved": true
+  },
+  "s05": {
+    "key": "9949113ce4c7",
+    "path": "keyframes\\s05__9949113ce4c7.png",
+    "seed": 105,
+    "prompt": "Peneal sits in his chair at the wooden desk in the dark room, turned to face the faintly glowing wolf sitting on the floor beside him, one hand raised as if arguing, the laptop on the desk behind him, both figures fully visible. Peneal: Peneal, a 26-year-old Ethiopian backend engineer, slim build, short curly black hair, short full black beard and moustache, thin gold-rimmed aviator glasses, warm brown skin, wearing a plain dark hoodie, calm thoughtful face. The Wolf: an Ethiopian wolf (Simien fox), slender long-legged canid with a long narrow muzzle, rich tawny-red coat, white throat and chest, pointed ears, wise calm amber eyes, a faint soft inner glow along its outline as if it were half a dream. traditional Ethiopian Orthodox church painting style, flat areas of bold colour, thick dark outlines, large almond-shaped expressive eyes, frontal or three-quarter poses, palette of ochre yellow, deep red, indigo blue and leaf green with gold accents, painted on aged plaster with fine cracks, flat patterned background, minimal perspective, warm candle-like light, subject centred in frame. avoid: text, letters, words, numbers, watermark, logo, photorealistic, 3d render, extra fingers, distorted face, modern cartoon style, halo, aura ring, wings",
+    "approved": true
+  },
+  "s06": {
+    "key": "404d4735bf17",
+    "path": "keyframes\\s06__404d4735bf17.png",
+    "seed": 106,
+    "prompt": "extreme close-up of the wolf's head filling the frame, in the dark room lit by candlelight, wise gentle amber eyes looking at the viewer, a faint dreamlike glow around its fur. The Wolf: an Ethiopian wolf (Simien fox), slender long-legged canid with a long narrow muzzle, rich tawny-red coat, white throat and chest, pointed ears, wise calm amber eyes, a faint soft inner glow along its outline as if it were half a dream. traditional Ethiopian Orthodox church painting style, flat areas of bold colour, thick dark outlines, large almond-shaped expressive eyes, frontal or three-quarter poses, palette of ochre yellow, deep red, indigo blue and leaf green with gold accents, painted on aged plaster with fine cracks, flat patterned background, minimal perspective, warm candle-like light, subject centred in frame. avoid: text, letters, words, numbers, watermark, logo, photorealistic, 3d render, extra fingers, distorted face, modern cartoon style, halo, aura ring, wings",
+    "approved": true
+  },
+  "s07": {
+    "key": "2ccb8df05ab0",
+    "path": "keyframes\\s07__2ccb8df05ab0.png",
+    "seed": 107,
+    "prompt": "a long procession of traditional Ethiopian craftspeople painted in a row across a gold background: a scribe writing on parchment with a reed pen, a weaver at a wooden loom with white cotton cloth, a church painter holding a brush, a man at an old telegraph key, each figure separated by an ornamental border. traditional Ethiopian Orthodox church painting style, flat areas of bold colour, thick dark outlines, large almond-shaped expressive eyes, frontal or three-quarter poses, palette of ochre yellow, deep red, indigo blue and leaf green with gold accents, painted on aged plaster with fine cracks, flat patterned background, minimal perspective, warm candle-like light, subject centred in frame. avoid: text, letters, words, numbers, watermark, logo, photorealistic, 3d render, extra fingers, distorted face, modern cartoon style, halo, aura ring, wings",
+    "approved": true
+  },
+  "s08": {
+    "key": "3070efea0add",
+    "path": "keyframes\\s08__3070efea0add.png",
+    "seed": 108,
+    "prompt": "Peneal stands at the end of the painted procession of craftspeople with his laptop held like a book, the wolf beside him, gold background, ornamental border. Peneal: Peneal, a 26-year-old Ethiopian backend engineer, slim build, short curly black hair, short full black beard and moustache, thin gold-rimmed aviator glasses, warm brown skin, wearing a plain dark hoodie, calm thoughtful face. The Wolf: an Ethiopian wolf (Simien fox), slender long-legged canid with a long narrow muzzle, rich tawny-red coat, white throat and chest, pointed ears, wise calm amber eyes, a faint soft inner glow along its outline as if it were half a dream. traditional Ethiopian Orthodox church painting style, flat areas of bold colour, thick dark outlines, large almond-shaped expressive eyes, frontal or three-quarter poses, palette of ochre yellow, deep red, indigo blue and leaf green with gold accents, painted on aged plaster with fine cracks, flat patterned background, minimal perspective, warm candle-like light, subject centred in frame. avoid: text, letters, words, numbers, watermark, logo, photorealistic, 3d render, extra fingers, distorted face, modern cartoon style, halo, aura ring, wings",
+    "approved": true
+  },
+  "s09": {
+    "key": "c25d4000ace0",
+    "path": "keyframes\\s09__c25d4000ace0.png",
+    "seed": 109,
+    "prompt": "a young Ethiopian boy of about twelve sits in front of an old boxy computer screen in a small room, his face lit up with a wide surprised smile, warm light. traditional Ethiopian Orthodox church painting style, flat areas of bold colour, thick dark outlines, large almond-shaped expressive eyes, frontal or three-quarter poses, palette of ochre yellow, deep red, indigo blue and leaf green with gold accents, painted on aged plaster with fine cracks, flat patterned background, minimal perspective, warm candle-like light, subject centred in frame. avoid: text, letters, words, numbers, watermark, logo, photorealistic, 3d render, extra fingers, distorted face, modern cartoon style, halo, aura ring, wings",
+    "approved": true
+  },
+  "s10": {
+    "key": "c5344fefa524",
+    "path": "keyframes\\s10__c5344fefa524.png",
+    "seed": 110,
+    "prompt": "close-up of Peneal at his desk smiling softly for the first time, warm golden light on his face. Peneal: Peneal, a 26-year-old Ethiopian backend engineer, slim build, short curly black hair, short full black beard and moustache, thin gold-rimmed aviator glasses, warm brown skin, wearing a plain dark hoodie, calm thoughtful face. traditional Ethiopian Orthodox church painting style, flat areas of bold colour, thick dark outlines, large almond-shaped expressive eyes, frontal or three-quarter poses, palette of ochre yellow, deep red, indigo blue and leaf green with gold accents, painted on aged plaster with fine cracks, flat patterned background, minimal perspective, warm candle-like light, subject centred in frame. avoid: text, letters, words, numbers, watermark, logo, photorealistic, 3d render, extra fingers, distorted face, modern cartoon style, halo, aura ring, wings",
+    "approved": true
+  },
+  "s11": {
+    "key": "cf4927113617",
+    "path": "keyframes\\s11__cf4927113617.png",
+    "seed": 111,
+    "prompt": "wide view of Peneal seated at his wooden desk in the dark room, typing on his glowing laptop, calm; on the floor beside the desk the wolf is fading into soft light like a dream, half transparent, only a faint glow left. Peneal: Peneal, a 26-year-old Ethiopian backend engineer, slim build, short curly black hair, short full black beard and moustache, thin gold-rimmed aviator glasses, warm brown skin, wearing a plain dark hoodie, calm thoughtful face. The Wolf: an Ethiopian wolf (Simien fox), slender long-legged canid with a long narrow muzzle, rich tawny-red coat, white throat and chest, pointed ears, wise calm amber eyes, a faint soft inner glow along its outline as if it were half a dream. traditional Ethiopian Orthodox church painting style, flat areas of bold colour, thick dark outlines, large almond-shaped expressive eyes, frontal or three-quarter poses, palette of ochre yellow, deep red, indigo blue and leaf green with gold accents, painted on aged plaster with fine cracks, flat patterned background, minimal perspective, warm candle-like light, subject centred in frame. avoid: text, letters, words, numbers, watermark, logo, photorealistic, 3d render, extra fingers, distorted face, modern cartoon style, halo, aura ring, wings",
+    "approved": true
+  }
+}

@@ -1,0 +1,64 @@
+1
+00:00:00,300 --> 00:00:05,870
+Everyone is a programmer now. They type a
+wish, and the machine writes the code.
+
+2
+00:00:07,270 --> 00:00:09,510
+And that worries you?
+
+3
+00:00:11,270 --> 00:00:18,814
+I spent years learning what happens
+underneath. Memory. Pointers. Why things
+
+4
+00:00:18,814 --> 00:00:19,410
+break.
+
+5
+00:00:20,310 --> 00:00:32,170
+Punch cards. Assembly. C. Every step was
+someone trying to say what they meant more
+
+6
+00:00:32,170 --> 00:00:33,170
+easily.
+
+7
+00:00:34,070 --> 00:00:38,240
+But if it's easy, who will know how it
+works when it breaks?
+
+8
+00:00:39,140 --> 00:00:44,250
+Someone always does. The one who wants to.
+
+9
+00:00:45,150 --> 00:00:53,602
+Before you, the scribe ground his own ink
+for the manuscript. The weaver counted
+
+10
+00:00:53,602 --> 00:00:59,730
+every thread of the shemma. They feared
+the new thing too.
+
+11
+00:01:00,630 --> 00:01:08,130
+And yet the craft is still here. You are
+just the newest one in a very long line.
+
+12
+00:01:09,030 --> 00:01:15,150
+Do you remember the first time the screen
+said "Hello, World" back?
+
+13
+00:01:16,350 --> 00:01:18,330
+I laughed out loud.
+
+14
+00:01:20,050 --> 00:01:24,960
+Maybe that's the point. More people will
+get to feel that laugh.

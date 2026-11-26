@@ -1,0 +1,81 @@
+{
+  "s01": {
+    "key": "fd4f58a0d158",
+    "path": "shots\\s01_kb__fd4f58a0d158.mp4",
+    "source": "kenburns",
+    "fallback": "push_in"
+  },
+  "s02": {
+    "key": "6338604eba71",
+    "path": "shots\\s02__6338604eba71.mp4",
+    "source": "wan",
+    "spec": {
+      "shot_id": "s02",
+      "model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+      "keyframe_hash": "a9195797d51f",
+      "prompt": "the wolf slowly lifts its head and and its glow brightens slightly, dust motes drift in the light, the camera is fixed",
+      "negative_prompt": "morphing face, extra limbs, flicker, text, watermark, fast motion",
+      "seed": 102,
+      "width": 640,
+      "height": 640,
+      "fps": 24,
+      "frames": 121,
+      "steps": 30,
+      "guidance": 5.0
+    }
+  },
+  "s03": {
+    "key": "566f20a247bd",
+    "path": "shots\\s03_kb__566f20a247bd.mp4",
+    "source": "kenburns",
+    "fallback": "push_in"
+  },
+  "s04": {
+    "key": "565f9f806827",
+    "path": "shots\\s04_kb__565f9f806827.mp4",
+    "source": "kenburns",
+    "fallback": "pan_right"
+  },
+  "s05": {
+    "key": "929daa3de550",
+    "path": "shots\\s05_kb__929daa3de550.mp4",
+    "source": "kenburns",
+    "fallback": "push_in"
+  },
+  "s06": {
+    "key": "c39b9b5c81d1",
+    "path": "shots\\s06_kb__c39b9b5c81d1.mp4",
+    "source": "kenburns",
+    "fallback": "push_in"
+  },
+  "s07": {
+    "key": "8184249ab69e",
+    "path": "shots\\s07_kb__8184249ab69e.mp4",
+    "source": "kenburns",
+    "fallback": "pan_right"
+  },
+  "s08": {
+    "key": "c50d94c42c78",
+    "path": "shots\\s08_kb__c50d94c42c78.mp4",
+    "source": "kenburns",
+    "fallback": "pull_out"
+  },
+  "s09": {
+    "key": "33bd2946ac60",
+    "path": "shots\\s09_kb__33bd2946ac60.mp4",
+    "source": "kenburns",
+    "fallback": "push_in"
+  },
+  "s10": {
+    "key": "40246c8e5fd0",
+    "path": "shots\\s10_kb__40246c8e5fd0.mp4",
+    "source": "kenburns",
+    "fallback": "static"
+  },
+  "s11": {
+    "key": "e433c0600054",
+    "path": "shots\\s11_kb__e433c0600054.mp4",
+    "source": "kenburns",
+    "fallback": "pull_out"
+  }
+}
