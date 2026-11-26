@@ -1,0 +1,25 @@
+{
+  "score": "c3__85e47f922f7d.flac",
+  "total_s": 88.24,
+  "speech_s": 71.6,
+  "variants": {
+    "A brief default (thr 0.02, ratio 6, attack 300 ms, release 1500 ms)": {
+      "music_under_speech_vs_undipped_db": -9.88,
+      "music_in_gaps_vs_undipped_db": -1.82,
+      "music_rms_under_speech_db": -34.84,
+      "music_rms_in_gaps_db": -29.85
+    },
+    "B lower threshold, faster release (thr 0.01, ratio 6, attack 150 ms, release 800 ms)": {
+      "music_under_speech_vs_undipped_db": -11.7,
+      "music_in_gaps_vs_undipped_db": -1.05,
+      "music_rms_under_speech_db": -36.66,
+      "music_rms_in_gaps_db": -29.08
+    },
+    "C stronger ratio (thr 0.02, ratio 12, attack 300 ms, release 1500 ms)": {
+      "music_under_speech_vs_undipped_db": -10.59,
+      "music_in_gaps_vs_undipped_db": -1.94,
+      "music_rms_under_speech_db": -35.55,
+      "music_rms_in_gaps_db": -29.97
+    }
+  }
+}
