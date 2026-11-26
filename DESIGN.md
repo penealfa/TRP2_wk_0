@@ -35,7 +35,7 @@ Every shot's reason lives in `storyboard.json` (`shots[].reason`). `make validat
 
 | # | Who (relation to audience) | What they said | What I'll change |
 |---|---|---|---|
-| 1 | _who, relation_ | At the end the Amharic says "ሰላም" (selam) for "hello", but it should be exactly "Hello, World", untranslated, because that is the programmer's first program | s09 narration now reads `ስክሪኑ መጀመሪያ "Hello, World" ብሎ ሲመልስልህ ታስታውሳለህ?` and the subtitle says `"Hello, World"`. One edit regenerated one TTS call (s09) |
+| 1 | Tester (from the target audience) | At the end the Amharic says "ሰላም" (selam) for "hello", but it should be exactly "Hello, World", untranslated, because that is the programmer's first program | s09 narration now reads `ስክሪኑ መጀመሪያ "Hello, World" ብሎ ሲመልስልህ ታስታውሳለህ?` and the subtitle says `"Hello, World"`. One edit regenerated one TTS call (s09) |
 | 2 | | | |
 | 3 | | | |
 
@@ -47,7 +47,7 @@ Every shot's reason lives in `storyboard.json` (`shots[].reason`). `make validat
 
 | # | Who | What they said | What I'll change |
 |---|---|---|---|
-| 1 | _who, relation_ | The on-screen labels (PUNCH CARDS · 1950s, SCRIBE, WEAVER…) beyond the subtitles are clutter; remove them | Removed every `overlays` entry from `storyboard.json` (s04, s07). The overlay renderer stays in `pipeline/assemble.py`, covered by a test that supplies its own overlays |
+| 1 | Tester (from the target audience) | The on-screen labels (PUNCH CARDS · 1950s, SCRIBE, WEAVER…) beyond the subtitles are clutter; remove them | Removed every `overlays` entry from `storyboard.json` (s04, s07). The overlay renderer stays in `pipeline/assemble.py`, covered by a test that supplies its own overlays |
 | 2 | | | |
 | 3 | | | |
 
