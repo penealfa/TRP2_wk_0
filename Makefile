@@ -1,7 +1,7 @@
 # One command: `make film`. Every stage is cached by content hash, so re-running
 # after a storyboard edit regenerates only what changed.
 PY ?= python3
-.PHONY: help setup validate smoke script-sheet narration keyframes shots music radio film \
+.PHONY: help setup validate smoke script-sheet narration keyframes shots music radio film film-blender \
         kaggle-export kaggle-shots kaggle-import music-export music-import test offline-demo clean-cache costs
 
 help:
@@ -34,6 +34,9 @@ music: validate ## chosen ACE-Step candidate, else placeholder score
 
 radio: ## Phase 1 checkpoint: narration + placeholder score on black
 	$(PY) -m pipeline.run --radio
+
+film-blender: ## whole pipeline with Blender motion (a Cloudflare model writes camera moves) -> outputs_blender/final/
+	$(PY) -m pipeline.run --motion blender
 
 film: ## whole pipeline, both aspect ratios -> outputs/final/
 	$(PY) -m pipeline.run

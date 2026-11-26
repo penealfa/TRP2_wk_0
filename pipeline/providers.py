@@ -154,6 +154,26 @@ def _cf() -> tuple[str, dict]:
     return f"https://api.cloudflare.com/client/v4/accounts/{acct}/ai/run/", {"Authorization": f"Bearer {tok}"}
 
 
+def cloudflare_text(model: str, prompt: str, *, temperature: float = 0.4, max_tokens: int = 4096) -> str:
+    """One chat completion from a Workers AI text model (free daily neuron allowance).
+    Response shapes differ by model family, so both the legacy `response` field and the
+    OpenAI-style `choices` are read."""
+    url, headers = _cf()
+    body = {"messages": [{"role": "user", "content": prompt}], "temperature": temperature,
+            "max_tokens": max_tokens}
+    resp = _post(url + model, headers={**headers, "Content-Type": "application/json"}, json=body)
+    data = resp.json()
+    if data.get("success") is False:
+        raise FatalError(f"Cloudflare text error: {str(data.get('errors'))[:300]}")
+    res = data.get("result") or {}
+    text = res.get("response")
+    if text is None and res.get("choices"):
+        text = (res["choices"][0].get("message") or {}).get("content")
+    if not isinstance(text, str) or not text.strip():
+        raise FatalError(f"empty Cloudflare text response: {str(data)[:300]}")
+    return text
+
+
 def cloudflare_image(model: str, prompt: str, *, seed: int, width: int, height: int,
                      steps: int | None = None, reference_images: list[bytes] | None = None) -> bytes:
     """Generate one image. FLUX.1 schnell takes JSON (prompt, steps<=8, seed).

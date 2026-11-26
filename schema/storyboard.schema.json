@@ -133,7 +133,10 @@
             "minimum": 0
           },
           "ref_framing": {
-            "enum": ["portrait", "full_body"],
+            "enum": [
+              "portrait",
+              "full_body"
+            ],
             "description": "How the reference sheet frames this character. FLUX.2 copies the reference's framing into shots, so a face-led character works best as a portrait."
           }
         },
@@ -241,6 +244,13 @@
               }
             }
           }
+        },
+        "motion_backend": {
+          "enum": [
+            "kaggle",
+            "blender"
+          ],
+          "description": "How shots get motion: kaggle = Wan 2.2 clips (pan-and-zoom where missing); blender = a Cloudflare model writes each Blender camera move and Blender renders it locally. Overridden by --motion or HS_MOTION."
         }
       }
     },

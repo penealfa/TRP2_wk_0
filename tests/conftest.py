@@ -15,7 +15,7 @@ def sandbox(tmp_path, monkeypatch):
     import pipeline.common as c
     monkeypatch.setattr(c, "OUTPUTS", tmp_path / "outputs")
     monkeypatch.setattr(c, "RUNS_LOG", tmp_path / "runs.jsonl")
-    for mod in ("pipeline.narration", "pipeline.keyframes", "pipeline.shots", "pipeline.music", "pipeline.assemble"):
+    for mod in ("pipeline.narration", "pipeline.keyframes", "pipeline.shots", "pipeline.music", "pipeline.assemble", "pipeline.blender_layer"):
         m = __import__(mod, fromlist=["x"])
         for name in ("OUTPUTS", "RUNS_LOG"):
             if hasattr(m, name):

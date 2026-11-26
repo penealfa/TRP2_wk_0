@@ -40,6 +40,25 @@ generators into `outputs_offline/`. `make test` checks the schema rules and the
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for the contracts, the caching scheme and the failure handling.
 
+### Choose how shots move: Kaggle or Blender
+
+```bash
+make film                 # motion from Wan 2.2 on a Kaggle GPU (pan-and-zoom where no clip exists)
+make film-blender         # motion from Blender, rendered locally -> outputs_blender/final/
+python -m pipeline.run --motion blender      # same; or HS_MOTION=blender, or defaults.motion_backend
+```
+
+The Blender backend needs no GPU quota. For each keyframe a **Cloudflare Workers AI text model**
+(`@cf/qwen/qwen2.5-coder-32b-instruct`, with Llama and GPT-OSS as fallbacks; `HS_BLENDER_LLM=gemini`
+switches to Gemini) writes a Blender Python script for that shot's camera move, from the
+storyboard's motion text and a known-good template. The script passes a static safety check (allow-listed
+imports, no files, network or processes), then `blender -b -P script.py` renders the keyframe on a
+subdivided plane displaced by its own brightness, so a camera move shows parallax. If a model's script
+cannot be made to work, the template move is used and the run is logged `degraded`. Scripts are kept in
+`outputs/blender/scripts/`, every model call and render is a line in `runs.jsonl`, and the result is cached
+by hash like every other stage. Set `BLENDER_EXE` in `.env` if `blender` is not on your PATH. The two backends
+write to separate folders, so neither overwrites the other's films. Details: `pipeline/blender_layer.py`.
+
 ### Regenerate one shot (the walkthrough demo)
 
 ```bash
