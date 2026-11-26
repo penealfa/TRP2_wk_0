@@ -1,0 +1,15 @@
+{
+  "id": "penealfeleke/heritage-short-wan22",
+  "title": "heritage-short-wan22",
+  "code_file": "wan22_i2v.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "penealfeleke/heritage-short-jobs"
+  ],
+  "competition_sources": [],
+  "kernel_sources": []
+}
