@@ -11,7 +11,7 @@ from pipeline.common import load_storyboard
 def test_template_is_valid_and_move_is_substituted():
     code = bl.template_script("pan_right")
     bl.check_script(code)
-    assert "'x': -0.12" in code and "template move: pan_right" in code
+    assert "'x': -0.1," in code and "template move: pan_right" in code
     assert bl.template_script("pull_out") != bl.template_script("push_in")
 
 
@@ -115,3 +115,9 @@ def test_motion_switch_chooses_the_backend(sandbox, monkeypatch):
     monkeypatch.setattr(sys, "argv", ["run"])
     run.main()
     assert called == ["blender-run", "blender-film"], "HS_MOTION selects the backend when no flag is given"
+
+
+def test_script_without_the_safety_clamp_is_rejected():
+    code = bl.template_script("push_in").replace("LIMIT_LOCATION", "REMOVED").replace("LIMIT_ROTATION", "REMOVED")
+    with pytest.raises(bl.ScriptRejected, match="LIMIT_"):
+        bl.check_script(code)

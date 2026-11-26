@@ -40,7 +40,7 @@ from pipeline.common import (FatalError, RetryableError, StageCache, call_with_r
 from pipeline.providers import cloudflare_text, gemini_text
 
 STAGE = "blender"
-TEMPLATE_VERSION = "2"
+TEMPLATE_VERSION = "3"
 SIZE = int(os.environ.get("HS_BLENDER_SIZE", "1080"))
 RENDER_TIMEOUT_S = int(os.environ.get("HS_BLENDER_TIMEOUT", "1200"))
 FILM_DIR = common.ROOT / "outputs_blender"
@@ -67,7 +67,7 @@ scene.eevee.taa_render_samples = 16
 
 # --- picture on a subdivided plane, displaced by its own brightness (pseudo-depth) ---
 img = bpy.data.images.load(image_path)
-bpy.ops.mesh.primitive_plane_add(size=2.3, location=(0, 0, 0), rotation=(math.radians(90), 0, 0))
+bpy.ops.mesh.primitive_plane_add(size=2.45, location=(0, 0, 0), rotation=(math.radians(90), 0, 0))
 plane = bpy.context.active_object
 sub = plane.modifiers.new("sub", "SUBSURF")
 sub.subdivision_type = "SIMPLE"
@@ -102,11 +102,28 @@ scene.camera = cam
 cam.rotation_euler = (math.radians(90), 0, 0)
 
 # ===== CAMERA MOVE (edit only this section) =====
-# The plane is 2.3 wide and the camera at y=-2.78 frames the middle 87% of it, so keep the
+# The plane is 2.45 wide and the camera at y=-2.78 frames the middle 82% of it, so keep the
 # move small enough that the edge of the plane never enters the frame:
-# |x| <= 0.12, |z| <= 0.1, y between -3.0 and -2.3.
+# |x| <= 0.1, |z| <= 0.1, y between -2.9 and -2.3, tilt and roll within 1.5 degrees.
+# (The safety clamp below enforces these limits whatever this section does.)
 START = {"x": 0.0, "y": -2.78, "z": 0.0}
 END = {"x": 0.0, "y": -2.35, "z": 0.0}      # slow push in
+# =================================================
+
+# ===== SAFETY CLAMP (do not edit): keeps the edge of the picture out of the frame =====
+lim_loc = cam.constraints.new("LIMIT_LOCATION")
+lim_loc.owner_space = "WORLD"
+lim_loc.use_min_x = lim_loc.use_max_x = lim_loc.use_min_y = lim_loc.use_max_y = True
+lim_loc.use_min_z = lim_loc.use_max_z = True
+lim_loc.min_x, lim_loc.max_x = -0.10, 0.10
+lim_loc.min_y, lim_loc.max_y = -2.90, -2.30
+lim_loc.min_z, lim_loc.max_z = -0.10, 0.10
+lim_rot = cam.constraints.new("LIMIT_ROTATION")
+lim_rot.owner_space = "WORLD"
+lim_rot.use_limit_x = lim_rot.use_limit_y = lim_rot.use_limit_z = True
+lim_rot.min_x, lim_rot.max_x = math.radians(88.5), math.radians(91.5)
+lim_rot.min_y, lim_rot.max_y = math.radians(-1.5), math.radians(1.5)
+lim_rot.min_z, lim_rot.max_z = math.radians(-1.5), math.radians(1.5)
 # =================================================
 
 for frame, pos in ((1, START), (FRAMES, END)):
@@ -127,8 +144,8 @@ bpy.ops.render.render(animation=True)
 TEMPLATE_MOVES = {
     "push_in": ({"x": 0.0, "y": -2.78, "z": 0.0}, {"x": 0.0, "y": -2.35, "z": 0.0}),
     "pull_out": ({"x": 0.0, "y": -2.35, "z": 0.0}, {"x": 0.0, "y": -2.78, "z": 0.0}),
-    "pan_right": ({"x": -0.12, "y": -2.60, "z": 0.0}, {"x": 0.12, "y": -2.60, "z": 0.0}),
-    "pan_left": ({"x": 0.12, "y": -2.60, "z": 0.0}, {"x": -0.12, "y": -2.60, "z": 0.0}),
+    "pan_right": ({"x": -0.10, "y": -2.60, "z": 0.0}, {"x": 0.10, "y": -2.60, "z": 0.0}),
+    "pan_left": ({"x": 0.10, "y": -2.60, "z": 0.0}, {"x": -0.10, "y": -2.60, "z": 0.0}),
     "static": ({"x": 0.0, "y": -2.78, "z": 0.0}, {"x": 0.0, "y": -2.70, "z": 0.02}),
 }
 
@@ -172,7 +189,7 @@ def check_script(code: str) -> None:
             raise ScriptRejected(f"name not allowed: {node.id}")
         elif isinstance(node, ast.Attribute) and node.attr in FORBIDDEN_ATTRS:
             raise ScriptRejected(f"attribute not allowed: .{node.attr}")
-    for needle in ("bpy.ops.render.render", "read_factory_settings", "sys.argv"):
+    for needle in ("bpy.ops.render.render", "read_factory_settings", "sys.argv", "LIMIT_LOCATION", "LIMIT_ROTATION"):
         if needle not in code:
             raise ScriptRejected(f"missing required call: {needle}")
 
