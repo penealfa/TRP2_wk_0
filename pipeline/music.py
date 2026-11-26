@@ -31,7 +31,7 @@ def candidate_specs(sb: dict) -> list[dict]:
     specs = []
     for n in range(1, m.get("candidates", 3) + 1):
         spec = {"model": "ACE-Step-1.5", "caption": m["caption"], "tags": m.get("tags", []),
-                "lyrics": m.get("lyrics", "[instrumental]"), "bpm": m.get("bpm"), "key": m.get("key"),
+                "lyrics": m.get("lyrics", "[instrumental]"), "bpm": m.get("bpm"), "keyscale": m.get("key"),
                 "duration_s": m["duration_s"], "seed": m.get("seed", 0) + n}
         specs.append({"id": f"c{n}", "key": stable_hash(spec), **spec})
     return specs
