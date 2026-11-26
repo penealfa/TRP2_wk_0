@@ -35,11 +35,11 @@ Every shot's reason lives in `storyboard.json` (`shots[].reason`). `make validat
 
 | # | Who (relation to audience) | What they said | What I'll change |
 |---|---|---|---|
-| 1 | | | |
+| 1 | _who, relation_ | At the end the Amharic says "ሰላም" (selam) for "hello", but it should be exactly "Hello, World", untranslated, because that is the programmer's first program | s09 narration now reads `ስክሪኑ መጀመሪያ "Hello, World" ብሎ ሲመልስልህ ታስታውሳለህ?` and the subtitle says `"Hello, World"`. One edit regenerated one TTS call (s09) |
 | 2 | | | |
 | 3 | | | |
 
-**Changes made to the storyboard because of this test:** _list each change and link the commit, e.g. s07 line cut from 17 to 11 words because 2/3 said it dragged_
+**Changes made to the storyboard because of this test:** s09 now says "Hello, World" literally (narration and subtitle) instead of the Amharic "ሰላም".
 
 ## User test 2: the near-final cut
 
@@ -48,7 +48,7 @@ Every shot's reason lives in `storyboard.json` (`shots[].reason`). `make validat
 | # | Who | What they said | What I'll change |
 |---|---|---|---|
 | 1 | _who, relation_ | The on-screen labels (PUNCH CARDS · 1950s, SCRIBE, WEAVER…) beyond the subtitles are clutter; remove them | Removed every `overlays` entry from `storyboard.json` (s04, s07). The overlay renderer stays in `pipeline/assemble.py`, covered by a test that supplies its own overlays |
-| 2 | _who, relation_ | At the end the Amharic says "ሰላም" (selam) for "hello", but it should be exactly "Hello, World", untranslated, because that is the programmer's first program | s09 narration now reads `ስክሪኑ መጀመሪያ "Hello, World" ብሎ ሲመልስልህ ታስታውሳለህ?` and the subtitle says `"Hello, World"`. One edit regenerated one TTS call (s09) |
+| 2 | | | |
 | 3 | | | |
 
-**Changes made:** the two storyboard edits above. _Add the commit link and the tester details._
+**Changes made:** removed all `overlays` from `storyboard.json`.
