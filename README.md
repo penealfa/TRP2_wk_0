@@ -78,7 +78,7 @@ $0. Measured latencies and GPU minutes per stage, with list-price equivalents, a
 
 ## Documents
 
-[DESIGN.md](DESIGN.md) (audience, intent, user tests) · [ARCHITECTURE.md](ARCHITECTURE.md) ·
+[REPORT.md](REPORT.md) · [DESIGN.md](DESIGN.md) (audience, intent, user tests) · [ARCHITECTURE.md](ARCHITECTURE.md) ·
 [EXPERIMENTS.md](EXPERIMENTS.md) · [FAILURES.md](FAILURES.md) · [COSTS.md](COSTS.md) ·
 [ETHICS.md](ETHICS.md) (consent, licences, labelling)
 

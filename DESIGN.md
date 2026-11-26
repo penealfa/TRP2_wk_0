@@ -24,6 +24,10 @@ Honest note on timing: this file was filled in after the first generation pass, 
 4. **The line of makers (s07–s08):** scribes, weavers, painters and telegraph operators, who feared the new thing too. Peneal stands at the end of that line.
 5. **The joy (s09–s11):** the first time the screen said "Hello, World" back. He laughs, the wolf fades, and he types again: same desk, a different man.
 
+## Language check
+
+Every Amharic line was read and approved by Peneal, who is a native Amharic speaker, after generation (26 Nov 2026). A second native speaker has not checked it yet. The one pronunciation/wording problem we know of came from a tester: "ሰላም" for "hello" in s09 (see user test 1).
+
 ## Shot reasons
 
 Every shot's reason lives in `storyboard.json` (`shots[].reason`). `make validate` prints them.
