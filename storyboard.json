@@ -218,7 +218,7 @@
       "motion": {
         "prompt": "the camera pans slowly from left to right along the row of figures, soft candle light flickers",
         "fallback": "pan_right",
-        "mode": "still"
+        "mode": "i2v"
       },
       "narration": {
         "speaker": "wolf",
