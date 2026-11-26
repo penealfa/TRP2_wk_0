@@ -27,10 +27,9 @@ a real person, so no consent is needed. Labelled on the end card.
 
 ### Cultural note
 
-The film borrows the visual language of Ethiopian Orthodox church painting for a story
-that isn't religious. On purpose, the wolf has no halo or other saint imagery: just a faint,
-dreamlike glow. Before publishing, I show the near-final cut to _an Orthodox family member
-or friend_ and record their reaction here. _Outcome: …_
+The film borrows the visual language of traditional Ethiopian painting. The wolf is shown
+with a faint, dreamlike glow only. Before publishing, I show the near-final cut to a family
+member or friend and record their reaction here. _Outcome: …_
 
 ### _person-id_ (copy for each real person shown or described)
 

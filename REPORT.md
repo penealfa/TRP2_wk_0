@@ -4,7 +4,7 @@ Peneal Feleke · 26 November 2026 · Code, logs and every figure below: <https:/
 
 ## 1. What I set out to make, and for whom
 
-I made an 89-second film in Amharic, with English subtitles, called *የኮድ ቅርስ — The Heritage of Code*. Late at night in Addis Ababa, a young backend engineer (me, painted) is afraid that AI is making his craft worthless. An Ethiopian wolf, a voice from his own subconscious, shows him the long line of Ethiopian makers he belongs to: scribes, weavers, painters, telegraph operators. The whole film is painted in the style of Ethiopian Orthodox church painting, and the story is not religious.
+I made an 89-second film in Amharic, with English subtitles, called *የኮድ ቅርስ — The Heritage of Code*. Late at night in Addis Ababa, a young backend engineer (me, painted) is afraid that AI is making his craft worthless. An Ethiopian wolf, a voice from his own subconscious, shows him the long line of Ethiopian makers he belongs to: scribes, weavers, painters, telegraph operators. The whole film is painted in the style of Ethiopian style painting.
 
 It is for young Ethiopian developers and CS students (20–30) who use AI tools every day and quietly worry what that means for their skills, and second for my family, who see my work as "computer stuff". They will watch it on a phone, vertical, on Instagram and in developer Telegram groups. I wanted them to end on relief and pride: our craft is not ending, it is one more link in a very old line, and the joy that made us start is still available. The audience, feeling and story beats are in `DESIGN.md`.
 
