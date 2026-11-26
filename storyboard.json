@@ -1,0 +1,375 @@
+{
+  "schema_version": "1.0",
+  "title": "የኮድ ቅርስ — The Heritage of Code",
+  "logline": "Late at night in Addis Ababa, a young backend engineer who fears that AI is making his craft worthless is visited by a softly glowing Ethiopian wolf, a voice from his own subconscious, who shows him the long Ethiopian line of makers he belongs to.",
+  "notes": "Original script inspired by the theme of a reference reel (craft vs. ease in programming). No lines are translated or copied from the reel. Every line is voiced by Gemini TTS in Amharic (Charon for Peneal, Kore for the wolf). Amharic lines are a first draft and need a native speaker's check.",
+  "language": {
+    "code": "am",
+    "name": "Amharic"
+  },
+  "audience": {
+    "who": "Young Ethiopian developers and CS students (20-30) who use AI tools daily and quietly worry what that means for their skills; second audience: my family, who see my work as 'computer stuff'",
+    "where": "Instagram Reels and the dev Telegram groups I am in, on a phone, vertical, often with sound on",
+    "feeling": "Relief and pride: our craft is not ending, it is one more link in a very old Ethiopian line of makers, and the joy that made us start is still available"
+  },
+  "style": {
+    "style_block": "traditional Ethiopian Orthodox church painting style, flat areas of bold colour, thick dark outlines, large almond-shaped expressive eyes, frontal or three-quarter poses, palette of ochre yellow, deep red, indigo blue and leaf green with gold accents, painted on aged plaster with fine cracks, flat patterned background, minimal perspective, warm candle-like light, subject centred in frame",
+    "negative": "text, letters, words, numbers, watermark, logo, photorealistic, 3d render, extra fingers, distorted face, modern cartoon style, halo, aura ring, wings",
+    "reference_sheet_prompt": "character reference: a single full-body figure, three-quarter view, centred on a plain flat ochre background, one figure only, no panels, no frames, no border",
+    "reference_seed": 2611
+  },
+  "characters": [
+    {
+      "id": "peneal",
+      "name": "Peneal",
+      "description": "Peneal, a 26-year-old Ethiopian backend engineer, slim build, short curly black hair, short full black beard and moustache, thin gold-rimmed aviator glasses, warm brown skin, wearing a plain dark hoodie, calm thoughtful face",
+      "real_person": true,
+      "consent_ref": "peneal",
+      "seed": 2611,
+      "ref_framing": "portrait"
+    },
+    {
+      "id": "wolf",
+      "name": "The Wolf",
+      "description": "an Ethiopian wolf (Simien fox), slender long-legged canid with a long narrow muzzle, rich tawny-red coat, white throat and chest, pointed ears, wise calm amber eyes, a faint soft inner glow along its outline as if it were half a dream",
+      "real_person": false,
+      "seed": 2612,
+      "ref_framing": "full_body"
+    }
+  ],
+  "defaults": {
+    "keyframe_model": "@cf/black-forest-labs/flux-2-klein-4b",
+    "video_model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "tts_model": "gemini-3.8-flash-tts",
+    "voice": "Kore",
+    "tts_style": "Speak in Amharic, slowly and warmly, like a wise elder telling a story at night:",
+    "narration_source": "tts",
+    "narrator": "Peneal (Gemini TTS voice Charon, consent: ETHICS.md#peneal); the wolf is Gemini TTS (voice Kore)",
+    "voices": {
+      "peneal": {
+        "source": "tts",
+        "voice": "Charon",
+        "style": "Speak in Amharic, calmly and thoughtfully, like a 26-year-old Ethiopian engineer late at night:"
+      },
+      "wolf": {
+        "source": "tts",
+        "voice": "Kore",
+        "style": "Speak in Amharic, slowly, gently and warmly, like a wise elder telling a story at night, with a small smile in the voice:"
+      }
+    },
+    "fps": 24,
+    "video_resolution": "480p",
+    "keyframe_width": 1024,
+    "keyframe_height": 1024
+  },
+  "shots": [
+    {
+      "id": "s01",
+      "duration_s": 6.2,
+      "shot_size": "medium",
+      "reason": "Open on Peneal alone at night so the viewer meets the person and his doubt before anything magical happens.",
+      "characters": [
+        "peneal"
+      ],
+      "keyframe": {
+        "prompt": "Peneal sits at a small wooden desk at night in a modest Addis Ababa room, a laptop glowing blue in front of him, a cup of buna beside it, a window behind him with distant city lights",
+        "seed": 101,
+        "approved": true
+      },
+      "motion": {
+        "prompt": "he types slowly then stops and leans back, the laptop light flickers on his face, the camera pushes in gently",
+        "fallback": "push_in"
+      },
+      "narration": {
+        "speaker": "peneal",
+        "text": "አሁን ሁሉም ሰው ፕሮግራመር ነው። ምኞቱን ይጽፋል፣ ማሽኑ ኮዱን ይጽፍለታል።",
+        "text_en": "Everyone is a programmer now. They type a wish, and the machine writes the code."
+      },
+      "music_cue": "night"
+    },
+    {
+      "id": "s02",
+      "duration_s": 4.5,
+      "shot_size": "medium",
+      "reason": "The wolf's arrival is the turn inward: a quiet, faintly glowing figure that feels like Peneal's own thoughts taking shape, not a monster.",
+      "characters": [
+        "wolf"
+      ],
+      "keyframe": {
+        "prompt": "the wolf sits calmly on the floor of the dark room beside a bookshelf, glowing softly, its faint glow lighting the wall behind it",
+        "seed": 102,
+        "approved": true
+      },
+      "motion": {
+        "prompt": "the wolf slowly lifts its head and and its glow brightens slightly, dust motes drift in the light, the camera is fixed",
+        "fallback": "static"
+      },
+      "narration": {
+        "speaker": "wolf",
+        "text": "ይሄ ያሳስብሃል?",
+        "text_en": "And that worries you?",
+        "offset_s": 0.8
+      }
+    },
+    {
+      "id": "s03",
+      "duration_s": 8,
+      "shot_size": "close_up",
+      "reason": "A close-up gives Peneal's fear its weight: this is what he is afraid of losing.",
+      "characters": [
+        "peneal"
+      ],
+      "keyframe": {
+        "prompt": "close-up of Peneal's face lit by the laptop, eyes tired but serious, looking slightly to the side toward a soft golden glow",
+        "seed": 103,
+        "approved": true
+      },
+      "motion": {
+        "prompt": "he turns his eyes toward the glow and frowns slightly, the camera is fixed",
+        "fallback": "push_in"
+      },
+      "narration": {
+        "speaker": "peneal",
+        "text": "ከውስጥ የሚሆነውን ለመማር ዓመታት አሳለፍኩ። ሜሞሪ፣ ፖይንተር፣ ነገሮች ለምን እንደሚበላሹ።",
+        "text_en": "I spent years learning what happens underneath. Memory. Pointers. Why things break."
+      }
+    },
+    {
+      "id": "s04",
+      "duration_s": 9,
+      "shot_size": "wide",
+      "reason": "The history of programming as painted panels shows that 'making it easier' is the whole story, not a betrayal of it.",
+      "characters": [
+        "wolf"
+      ],
+      "keyframe": {
+        "prompt": "the wolf stands in the dark room while three illuminated painted panels float in the air around it, the first showing a card full of punched holes, the second a wall of old machines with switches, the third a small glowing screen, gold borders around each panel",
+        "seed": 104,
+        "approved": true
+      },
+      "motion": {
+        "prompt": "the floating panels drift slowly upward and glow one after another, the camera pans slowly to the right",
+        "fallback": "pan_right"
+      },
+      "narration": {
+        "speaker": "wolf",
+        "text": "ፓንች ካርድ። አሰምብሊ። ሲ። እያንዳንዱ እርምጃ ሃሳብን በቀላሉ ለመግለጽ የተደረገ ጥረት ነበር።",
+        "text_en": "Punch cards. Assembly. C. Every step was someone trying to say what they meant more easily."
+      }
+    },
+    {
+      "id": "s05",
+      "duration_s": 5,
+      "shot_size": "medium_close_up",
+      "reason": "Peneal's strongest objection must be heard clearly, or the wolf's answer means nothing.",
+      "characters": [
+        "peneal",
+        "wolf"
+      ],
+      "keyframe": {
+        "prompt": "Peneal sits in his chair at the wooden desk in the dark room, turned to face the faintly glowing wolf sitting on the floor beside him, one hand raised as if arguing, the laptop on the desk behind him, both figures fully visible",
+        "seed": 105,
+        "approved": true
+      },
+      "motion": {
+        "prompt": "he gestures with one hand while speaking, the camera is fixed",
+        "fallback": "push_in"
+      },
+      "narration": {
+        "speaker": "peneal",
+        "text": "ቀላል ከሆነ ግን፣ ሲበላሽ እንዴት እንደሚሰራ ማን ያውቃል?",
+        "text_en": "But if it's easy, who will know how it works when it breaks?"
+      }
+    },
+    {
+      "id": "s06",
+      "duration_s": 5,
+      "shot_size": "close_up",
+      "reason": "A short, calm answer from the wolf lands harder than a long argument.",
+      "characters": [
+        "wolf"
+      ],
+      "keyframe": {
+        "prompt": "extreme close-up of the wolf's head filling the frame, in the dark room lit by candlelight, wise gentle amber eyes looking at the viewer, a faint dreamlike glow around its fur",
+        "seed": 106,
+        "approved": true
+      },
+      "motion": {
+        "prompt": "the wolf blinks slowly, its glow pulses faintly, the camera pushes in gently",
+        "fallback": "push_in"
+      },
+      "narration": {
+        "speaker": "wolf",
+        "text": "ሁሌም የሚያውቅ አለ። ማወቅ የሚፈልግ።",
+        "text_en": "Someone always does. The one who wants to."
+      }
+    },
+    {
+      "id": "s07",
+      "duration_s": 10,
+      "shot_size": "extreme_wide",
+      "reason": "The heart of the heritage: Ethiopian makers who faced the same fear, painted in the same church style the film is made in.",
+      "characters": [],
+      "keyframe": {
+        "prompt": "a long procession of traditional Ethiopian craftspeople painted in a row across a gold background: a scribe writing on parchment with a reed pen, a weaver at a wooden loom with white cotton cloth, a church painter holding a brush, a man at an old telegraph key, each figure separated by an ornamental border",
+        "seed": 107,
+        "approved": true
+      },
+      "motion": {
+        "prompt": "the camera pans slowly from left to right along the row of figures, soft candle light flickers",
+        "fallback": "pan_right",
+        "mode": "still"
+      },
+      "narration": {
+        "speaker": "wolf",
+        "text": "ከአንተ በፊት፣ ጸሐፊው ለብራናው ቀለሙን ራሱ ይፈጭ ነበር። ሸማኔው የሸማውን ክር አንድ በአንድ ይቆጥር ነበር። እነሱም አዲሱን ነገር ፈርተው ነበር።",
+        "text_en": "Before you, the scribe ground his own ink for the manuscript. The weaver counted every thread of the shemma. They feared the new thing too."
+      },
+      "music_cue": "lineage"
+    },
+    {
+      "id": "s08",
+      "duration_s": 7,
+      "shot_size": "wide",
+      "reason": "Placing Peneal at the end of the procession turns the history into his identity.",
+      "characters": [
+        "peneal",
+        "wolf"
+      ],
+      "keyframe": {
+        "prompt": "Peneal stands at the end of the painted procession of craftspeople with his laptop held like a book, the wolf beside him, gold background, ornamental border",
+        "seed": 108,
+        "approved": true
+      },
+      "motion": {
+        "prompt": "the camera slowly rises upward",
+        "fallback": "pull_out"
+      },
+      "narration": {
+        "speaker": "wolf",
+        "text": "ጥበቡ ግን ዛሬም አለ። አንተ የረጅሙ መስመር አዲሱ ሰው ብቻ ነህ።",
+        "text_en": "And yet the craft is still here. You are just the newest one in a very long line."
+      }
+    },
+    {
+      "id": "s09",
+      "duration_s": 6,
+      "shot_size": "medium",
+      "reason": "The memory of first joy is the emotional answer to the fear, so it gets its own warm image.",
+      "characters": [],
+      "keyframe": {
+        "prompt": "a young Ethiopian boy of about twelve sits in front of an old boxy computer screen in a small room, his face lit up with a wide surprised smile, warm light",
+        "seed": 109,
+        "approved": true
+      },
+      "motion": {
+        "prompt": "the boy laughs and leans toward the screen, the camera pushes in gently",
+        "fallback": "push_in"
+      },
+      "narration": {
+        "speaker": "wolf",
+        "text": "ስክሪኑ መጀመሪያ \"Hello, World\" ብሎ ሲመልስልህ ታስታውሳለህ?",
+        "text_en": "Do you remember the first time the screen said \"Hello, World\" back?"
+      }
+    },
+    {
+      "id": "s10",
+      "duration_s": 4,
+      "shot_size": "close_up",
+      "reason": "Peneal smiling for the first time shows the change in him without anyone explaining it.",
+      "characters": [
+        "peneal"
+      ],
+      "keyframe": {
+        "prompt": "close-up of Peneal at his desk smiling softly for the first time, warm golden light on his face",
+        "seed": 110,
+        "approved": true
+      },
+      "motion": {
+        "prompt": "he smiles and lowers his eyes, the camera is fixed",
+        "fallback": "static"
+      },
+      "narration": {
+        "speaker": "peneal",
+        "text": "ጮክ ብዬ ሳቅኩ።",
+        "text_en": "I laughed out loud.",
+        "offset_s": 0.6
+      }
+    },
+    {
+      "id": "s11",
+      "duration_s": 6.5,
+      "shot_size": "wide",
+      "reason": "The wolf fading and Peneal typing again closes the circle: same desk, a different man.",
+      "characters": [
+        "peneal",
+        "wolf"
+      ],
+      "keyframe": {
+        "prompt": "wide view of Peneal seated at his wooden desk in the dark room, typing on his glowing laptop, calm; on the floor beside the desk the wolf is fading into soft light like a dream, half transparent, only a faint glow left",
+        "seed": 111,
+        "approved": true
+      },
+      "motion": {
+        "prompt": "the wolf's glow fades slowly, the camera pulls back slowly into darkness",
+        "fallback": "pull_out"
+      },
+      "narration": {
+        "speaker": "peneal",
+        "text": "ምናልባት ይሄ ነው። ብዙ ሰዎች ያንን ሳቅ ያገኛሉ።",
+        "text_en": "Maybe that's the point. More people will get to feel that laugh."
+      },
+      "music_cue": "resolve"
+    }
+  ],
+  "music": {
+    "caption": "slow meditative Ethiopian-inspired instrumental, soft krar plucks, warm low washint flute, gentle kebero hand drum far in the background, airy and spacious, no strong lead melody, night-time, hopeful ending",
+    "tags": [
+      "instrumental",
+      "ambient",
+      "ethiopian",
+      "meditative",
+      "cinematic"
+    ],
+    "lyrics": "[Instrumental]",
+    "bpm": 66,
+    "key": "D minor",
+    "duration_s": 90,
+    "seed": 26,
+    "candidates": 3,
+    "chosen": null,
+    "chosen_reason": "",
+    "duck": {
+      "threshold": 0.02,
+      "ratio": 6,
+      "attack_ms": 300,
+      "release_ms": 1500,
+      "music_gain_db": -6
+    },
+    "cues": [
+      {
+        "id": "night",
+        "starts_at_shot": "s01",
+        "description": "Sparse texture, almost silence, a single krar note now and then."
+      },
+      {
+        "id": "lineage",
+        "starts_at_shot": "s07",
+        "description": "Drum and flute enter softly; the music widens with the procession."
+      },
+      {
+        "id": "resolve",
+        "starts_at_shot": "s11",
+        "description": "Theme resolves to a warm major chord and fades into the end card."
+      }
+    ]
+  },
+  "end_card": {
+    "lines": [
+      "የኮድ ቅርስ · The Heritage of Code",
+      "Made with AI: the paintings and both voices were generated by AI models (FLUX.2, Gemini TTS)",
+      "Written by Peneal · voiced by Gemini TTS"
+    ],
+    "duration_s": 3
+  }
+}

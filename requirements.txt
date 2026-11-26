@@ -1,0 +1,5 @@
+jsonschema>=4.21
+requests>=2.31
+pillow>=10.0
+pytest>=8.0
+# optional: pip install kaggle   (only for `make kaggle-shots`)

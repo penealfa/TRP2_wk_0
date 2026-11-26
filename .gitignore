@@ -1,0 +1,24 @@
+.env
+*.env
+!.env.example
+kaggle.json
+__pycache__/
+.pytest_cache/
+.venv/
+storyboard.draft.json
+outputs/_import*/
+outputs/assembly/
+outputs/kaggle_job/
+outputs/kaggle_music_job/
+outputs/smoke/
+# Large media: keep final films out of git (link them in the README); keep stage outputs small enough to inspect
+outputs/final/*.mp4
+outputs/**/*_cand*.png
+outputs_offline/
+
+# Personal reference photos (consent covers generation, not publishing the photo)
+assets/refs/*.jpg
+assets/refs/*.png
+outputs/_music_dl.txt
+outputs/kaggle_out/*.log
+outputs/kaggle_out/
