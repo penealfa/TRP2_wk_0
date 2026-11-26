@@ -13,7 +13,7 @@
     "feeling": "Relief and pride: our craft is not ending, it is one more link in a very old Ethiopian line of makers, and the joy that made us start is still available"
   },
   "style": {
-    "style_block": "traditional Ethiopian Orthodox church painting style, flat areas of bold colour, thick dark outlines, large almond-shaped expressive eyes, frontal or three-quarter poses, palette of ochre yellow, deep red, indigo blue and leaf green with gold accents, painted on aged plaster with fine cracks, flat patterned background, minimal perspective, warm candle-like light, subject centred in frame",
+    "style_block": "traditional Ethiopian painting style, flat areas of bold colour, thick dark outlines, large almond-shaped expressive eyes, frontal or three-quarter poses, palette of ochre yellow, deep red, indigo blue and leaf green with gold accents, painted on aged plaster with fine cracks, flat patterned background, minimal perspective, warm candle-like light, subject centred in frame",
     "negative": "text, letters, words, numbers, watermark, logo, photorealistic, 3d render, extra fingers, distorted face, modern cartoon style, halo, aura ring, wings",
     "reference_sheet_prompt": "character reference: a single full-body figure, three-quarter view, centred on a plain flat ochre background, one figure only, no panels, no frames, no border",
     "reference_seed": 2611

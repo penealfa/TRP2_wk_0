@@ -4,6 +4,6 @@
     "path": "music\\c3__85e47f922f7d.flac",
     "source": "ace-step",
     "candidate": "c3",
-    "reason": "Measured, not yet by ear: c3 puts the least energy in the 300-3400 Hz speech band (-4.26 dB relative to its total level, vs -2.38 dB for c1 and -2.87 dB for c2), so it should mask the Amharic narration least; levels are otherwise within 1 dB. Confirm by listening under the cut (EXPERIMENTS E7)."
+    "reason": "Measured first: c3 puts the least energy in the 300-3400 Hz speech band (-4.26 dB relative to its total level, vs -2.38 dB for c1 and -2.87 dB for c2), so it should mask the Amharic narration least. Then confirmed by ear: Peneal listened to the films with c3 under the narration and approved it."
   }
 }
